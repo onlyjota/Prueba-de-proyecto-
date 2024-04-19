@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Cuadros gatunos pintados al oleo</title>
+    <title>Galería de Arte - Galería</title>
     <style>
         :root {
             --sky-blue: #8ecae6ff;
@@ -39,8 +39,19 @@
             color: white;
         }
 
-        main {
+        .gallery {
             padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border: 5px solid var(--blue-green);
+            border-radius: 5px;
         }
 
         footer {
@@ -56,20 +67,18 @@
 </head>
 <body>
 <header>
-    <h1>Galeria de arte</h1>
+    <h1>Galería de Arte</h1>
 </header>
 <nav>
     <a href="index.html">Inicio</a>
     <a href="galeria.html">Galería</a>
     <a href="contacto.html">Contacto</a>
 </nav>
-<main>
-    <h2>Cuadros gatunos pintados al oleo</h2>
-    <p>Explora hermosas obras de arte inspiradas en gatos.</p>
-</main>
-<footer>
-    <p>© 2024 Galería de Arte</p>
-</footer>
+<section class="gallery">
+    <img src="arte1.jpg" alt="Gato 1">
+    <img src="arte2.jpg" alt="Gato 2">
+    <img src="arte3.jpg" alt="Gato 3">
+    <img src="arte4.jpg" alt="Gato 4">
+</section>
 </body>
 </html>
-
