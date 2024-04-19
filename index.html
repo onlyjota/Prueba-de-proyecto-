@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8ecae6ff;
+            color: #023047ff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #219ebcff;
+            padding: 10px;
+        }
+        nav a {
+            color: #023047ff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Oculta las secciones cuando se seleccionan desde la navbar */
+        #home:target,
+        #gallery:target,
+        #contact:target {
+            display: none;
+        }
+        /* Aplica gradientes */
+        #home {
+            background: linear-gradient(0deg, #8ecae6ff, #219ebcff, #023047ff);
+        }
+        #gallery {
+            background: linear-gradient(90deg, #8ecae6ff, #219ebcff, #023047ff);
+        }
+        #contact {
+            background: linear-gradient(180deg, #8ecae6ff, #219ebcff, #023047ff);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Galería de Arte</h1>
+</header>
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+</nav>
+<section id="home">
+    <h2>Bienvenido a Nuestra Galería de Arte</h2>
+    <p>Descubre el arte de los cuadros de gatos en nuestra galería.</p>
+</section>
+<section id="gallery" class="gallery">
+    <img src="artwork1.jpg" alt="Obra de Arte 1">
+    <img src="artwork2.jpg" alt="Obra de Arte 2">
+    <!-- Agrega más imágenes aquí -->
+</section>
+<section id="contact" class="contact">
+    <h2>Contáctanos</h2>
+    <p>Email: info@galeriadearte.com</p>
+    <p>Teléfono: +1 (123) 456-7890</p>
+</section>
+</body>
+</html>
